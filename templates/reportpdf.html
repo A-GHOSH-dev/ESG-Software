@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="{% static 'css/stylepdf.css' %}">
+
+    <title>Report</title>
+</head>
+
+<body>
+
+
+    <div class="my-5 page">
+        <div class="p-5">
+            <section class="top-content bb d-flex justify-content-between">
+                <div class="logo">
+                    <img src="https://th.bing.com/th/id/OIP.uY5uBrOUIGuUN7uT-WzIgwHaHo?pid=ImgDet&rs=1" alt="" class="img-fluid">
+                </div>
+                <div class="top-left">
+                    <div class="graphic-path">
+                        <p>ESG Report</p>
+                    </div>
+                    {% for storders in finalreportorder %}
+                    <div class="position-relative">
+                        <p>Corporate Identity Number: <span>{{storders.n1}}</span></p>
+                      
+                        <p>Year: <span>{{storders.n8}}</span></p>
+                       
+                    </div>
+                </div>
+            </section>
+
+            <section class="store-user mt-5">
+                <div class="container">
+                    <div class="container">
+                       
+                          
+                            <h2>SECTION A: GENERAL DISCLOSURES</h2>
+                            <h3>I. Details of the listed entity</h3>
+                            <div class="position-relative">
+                                <p>1. Corporate Identity Number (CIN) of the Listed Entity: <span>{{storders.n1}}</span></p>
+                                <p>2. Name of the Listed Entity: <span>{{storders.n2}}</span></p>
+                                <p>3. Year of incorporation: <span>{{storders.n3}}</span></p>
+                                <p>4. Registered office address: <span>{{storders.n4}}</span></p>
+                                <p>5. E-mail: <span>{{storders.n5}}</span></p>
+                                <p>6. Telephone: <span>{{storders.n6}}</span></p>
+                                <p>7. Website: <span>{{storders.n7}}</span></p>
+                                <p>8. Financial year for which reporting is being done: <span>{{storders.n8}}</span></p>
+                                <p>9. Name of the Stock Exchange(s) where shares are listed: <span>{{storders.n9}}</span></p>
+                                <p>10. Paid-up Capital: <span>{{storders.n10}}</span></p>
+                            </div>
+                            
+                            
+                     
+                      
+                          
+                            <h3>II. Products/services</h3>
+                            <p>11. Details of business activities (accounting for 90% of the turnover): <span>{{storders.n11}}</span></p>
+                            <p>12. Products/Services sold by the entity (accounting for 90% of the entity’s Turnover): <span>{{storders.n12}}</span></p>
+                            <h3>III. Operations</h3>
+                            <p>13. Number of locations where plants and/or operations/offices of the entity are situated: <span>{{storders.n13}}</span></p>
+                            <p>14. Markets served by the entity: <span>{{storders.n14}}</span></p>
+                            <h3>IV. Employees</h3>
+                            <p>15. Employees and workers (including differently abled):</p>
+                            <p>Male: <span>{{storders.n15}}<span> | Female: <span>{{storders.n16}}</span> | Others: <span>{{storders.n17}}</span> | Differently Abled: <span>{{storders.n18}}</span></p>
+                            <p>16. TurnOver rates: <span>{{storders.n19}}</span></p>
+                            <p>17. Holding, Subsidiary and Associate Companies (including joint ventures):<span>{{storders.n20}}</span></p>
+                            
+                          
+                        </div>
+                    </div>
+                    <div class="container">
+                        
+                            <h3>V. CSR Details </h3>
+                            <p>18. CSR details: <span>{{storders.n21}}</span></p>
+                     
+                       
+                            <h3>VI. Transparency and Disclosures Compliances</h3>
+                            <p>19. Complaints/Grievances on any of the principles: <span>{{storders.n22}}</span></p>
+                            <p>20. Overview of the entity’s material responsible business conduct issues: <span>{{storders.n23}}</span></p>
+                     
+                    </div>
+                </div>    
+              
+            </section>
+     
+          
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    <div class="my-5 page">
+        <div class="p-5">
+            <section class="top-content bb d-flex justify-content-between">
+                <div class="logo">
+                    <img src="https://th.bing.com/th/id/OIP.uY5uBrOUIGuUN7uT-WzIgwHaHo?pid=ImgDet&rs=1" alt="" class="img-fluid">
+                </div>
+                <div class="top-left">
+                    <div class="graphic-path">
+                        <p>ESG Report</p>
+                    </div>
+              
+                    <div class="position-relative">
+                        <p>Corporate Identity Number: <span>{{storders.n1}}</span></p>
+                      
+                        <p>Year: <span>{{storders.n8}}</span></p>
+                       
+                    </div>
+                </div>
+            </section>
+
+            <section class="store-user mt-5">
+                <div class="container">
+                    <div class="container">
+                       
+                          
+                            <h2>SECTION B: MANAGEMENT AND PROCESS DISCLOSURES</h2>
+                           
+                            <div class="position-relative">
+                                <p>21. Policy and management processes: <span>{{storders.n24}}</span></p>
+                                <p>22. Governance, leadership and oversight: <span>{{storders.n25}}</span></p>
+                               
+                               
+                                <h2>SECTION C: PRINCIPLE WISE PERFORMANCE DISCLOSURE</h2>
+                                <h3>PRINCIPLE 1 - Businesses should conduct and govern themselves with integrity, and in a manner that is Ethical, Transparent and Accountable.</h3>
+                                <p>Percentage coverage by training and awareness programmes on any of the Principles
+                                    during the financial year: <span>{{storders.n26}}</span></p>
+                                <p>Amount Fines/Penalties:<span>{{storders.n27}}</span></p>
+                                <p>Award: <span>{{storders.n28}}</span></p>
+                                <p>Does the entity have an anti-corruption or anti-bribery policy? <span>{{storders.n29}}</span></p>
+                                <p>Provide details of any corrective action taken: <span>{{storders.n30}}</span></p>
+                                
+                                <h3>PRINCIPLE 2 Businesses should provide goods and services in a manner that is sustainable and safe
+                                </h3>
+                                <p>Percentage of R&D investments in specific technologies
+                                    to improve the environmental and social impacts of product and processes to total R&D: <span>{{storders.n31}}</span></p>
+                                <p>Percentage of capital expenditure (capex) investments in specific technologies
+                                    to improve the environmental and social impacts of product and processes: <span>{{storders.n32}}</span></p>
+                                <p>Sustainable sourcing percentage input? <span>{{storders.n33}}</span></p>
+                            </div>
+                            <p>Does the entity have an anti-corruption or anti-bribery policy? <span>{{storders.n34}}</span></p>
+                            <p>Describe the processes in place to safely reclaim your products for reusing, recycling and
+                                disposing at the end of life, for Plastics (including packaging): <span>{{storders.n35}}</span></p>
+                      
+                            <p>Describe the processes in place to safely reclaim your products for reusing, recycling and
+                                disposing at the end of life, for E-waste: <span>{{storders.n36}}</span></p>
+                            <p>Describe the processes in place to safely reclaim your products for reusing, recycling and
+                                disposing at the end of life, for Hazardous waste: <span>{{storders.n37}}</span></p>
+                    
+                            <p>Whether Extended Producer Responsibility (EPR) is applicable to the entity’s activities? <span>{{storders.n38}}</span> </p>
+                            <p>If there are any significant social or environmental concerns and/or risks arising from
+                                production or disposal of your products / services, as identified in the Life Cycle
+                                Perspective / Assessments (LCA) or through any other means, briefly describe the same
+                                along-with action taken to mitigate the same: <span>{{storders.n39}}</span></p>
+                            <p>Percentage of recycled or reused input material to total material (by value) used in
+                                production (for manufacturing industry) or providing services (for service industry):<span>{{storders.n40}}</span></p>
+                            
+                          
+                        </div>
+                    </div>
+                    <div class="container">
+                        
+                            <h3>PRINCIPLE 3 Businesses should respect and promote the well-being
+                                of all employees, including those in their value chains</h3>
+                            <p>Details of measures for the well-being of employees: <span>{{storders.n41}}</span></p>
+                     
+                            <p>Does the entity have an equal opportunity policy as per the Rights of Persons with
+                                Disabilities Act, 2016? If so, provide a web-link to the policy: <span>{{storders.n42}}</span></p>
+                            <p>Health and safety management system: <span>{{storders.n43}}</span></p>
+                            <p>Details of safety related incidents: <span>{{storders.n44}}</span></p>
+                     
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+   
+    <div class="my-5 page">
+        <div class="p-5">
+            <section class="top-content bb d-flex justify-content-between">
+                <div class="logo">
+                    <img src="https://th.bing.com/th/id/OIP.uY5uBrOUIGuUN7uT-WzIgwHaHo?pid=ImgDet&rs=1" alt="" class="img-fluid">
+                </div>
+                <div class="top-left">
+                    <div class="graphic-path">
+                        <p>ESG Report</p>
+                    </div>
+              
+                    <div class="position-relative">
+                        <p>Corporate Identity Number: <span>{{storders.n1}}</span></p>
+                      
+                        <p>Year: <span>{{storders.n8}}</span></p>
+                       
+                    </div>
+                </div>
+            </section>
+
+            <section class="store-user mt-5">
+                <div class="container">
+                    <div class="container">
+                       
+                        <h3>PRINCIPLE 4: Businesses should respect the interests of and be
+                            responsive to all its stakeholders</h3>
+                           
+                            <div class="position-relative">
+                                <p>Describe the processes for identifying key stakeholder groups of the entity: <span>{{storders.n45}}</span></p>
+                                <p>List stakeholder groups identified as key for your entity and the frequency of
+                                    engagement with each stakeholder group: <span>{{storders.n46}}</span></p>
+                               
+                                    <p>Provide the processes for consultation between stakeholders and the Board on
+                                        economic, environmental, and social topics: <span>{{storders.n47}}</span></p>
+                                        
+
+                                <h3>PRINCIPLE 5 Businesses should respect and promote human rights</h3>
+                                <p>Number of Employees and workers who have been provided training on human rights issues and policy(ies) of the entity: <span>{{storders.n48}}</span></p>
+                                <p>Details of minimum wages paid to employees:<span>{{storders.n49}}</span></p>
+                                <p>Mechanisms to prevent adverse consequences to the complainant in discrimination and
+                                    harassment cases: <span>{{storders.n50}}</span></p>
+
+                                
+                                <h3>PRINCIPLE 6: Businesses should respect and make efforts to protect
+                                    and restore the environment
+                                </h3>
+                                <h5>Provide details of the following disclosures related to energy:</h5>
+                                <p>Details of total energy consumption (in Joules or multiples) and energy intensity:  <span>{{storders.n51}}</span></p>
+                                <p>Total electricity consumption:   <span>{{storders.n52}}</span></p>
+                                <p>Total fuel consumption: <span>{{storders.n53}}</span></p>
+
+                                <p>Total energy consumption:  <span>{{storders.n54}}</span></p>
+                                <p>Energy intensity per rupee of turnover:   <span>{{storders.n55}}</span></p>
+                              
+                            </div>
+                            <h5>Provide details of the following disclosures related to water:</h5>
+                            <p>Water withdrawal by source
+                                (i) Surface water
+                                (ii) Groundwater
+                                (iii) Third party water
+                                (iv) Seawater / desalinated water
+                                (v) Others
+                                
+                                 = Total volume of water withdrawal: <span>{{storders.n56}}</span></p>
+                            <p>Total volume of water consumption: <span>{{storders.n57}}</span></p>
+                      
+                            <p>Water intensity per rupee of turnover: <span>{{storders.n58}}</span></p>
+                            <p>Has the entity implemented a mechanism for Zero Liquid Discharge? <span>{{storders.59}}</span></p>
+                    
+                            <h5>Please provide details of air emissions (other than GHG emissions):</h5>
+                            <p>NOx: <span>{{storders.n60}}</span> </p>
+                            <p>SOx: <span>{{storders.n61}}</span></p>
+                            <p>Particulate matter
+                                (PM):<span>{{storders.n62}}</span></p>
+
+                                <p>Persistent organic pollutants (POP): <span>{{storders.n63}}</span> </p>
+                                <p>Volatile organic compounds (VOC) <span>{{storders.n64}}</span></p>
+                                <p>  Hazardous air pollutants (HAP) 
+                                    (PM):<span>{{storders.n65}}</span></p>
+
+
+
+<h5>Provide details of greenhouse gas emissions (Scope 1 and Scope 2 emissions):</h5>
+<p>Total Scope 1 emissions
+            (Break-up of the GHG into
+            CO2, CH4, N2O, HFCs, PFCs,
+            SF6, NF3, if available): <span>{{storders.n66}}</span> </p>
+<p>otal Scope 2 emissions
+    (Break-up of the GHG into
+    CO2, CH4, N2O, HFCs, PFCs,
+    SF6, NF3, if available): <span>{{storders.n67}}</span></p>
+<p>  Total Scope 3 emissions
+    (Break-up of the GHG into
+    CO2, CH4, N2O, HFCs, PFCs,
+    SF6, NF3, if available) :
+    (PM):<span>{{storders.n68}}</span></p>
+
+
+    <p>  Does the entity have any project related to reducing Green House Gas emission?                          <span>{{storders.n69}}</span></p>
+
+
+    <h5>Provide details related to waste management:</h5>
+
+    <p>  Plastic waste (A)                          <span>{{storders.n70}}</span></p>
+    
+    <p>  E-waste (B)                         <span>{{storders.n71}}</span></p>
+
+    
+    <p>  Bio-medical waste (C)                           <span>{{storders.n72}}</span></p>
+    
+    <p>  Construction and demolition waste (D)                         <span>{{storders.n73}}</span></p>
+
+    
+    <p>  Battery waste (E)                          <span>{{storders.n74}}</span></p>
+    
+    <p>  Radioactive waste (F)                         <span>{{storders.n75}}</span></p>
+
+    
+    <p> Other Hazardous waste. Please
+        specify, if any. (G)                          <span>{{storders.n76}}</span></p>
+    
+    <p>  Other Non-hazardous waste
+        generated (H).                        <span>{{storders.n77}}</span></p>
+                            
+
+        <p>  Total.                        <span>{{storders.n78}}</span></p>
+
+        <p>   Category of waste-
+            (i) Recycled
+            (ii) Re-used
+            (iii) Other recovery operations
+            = Total:                        <span>{{storders.n79}}</span></p>
+
+        <p>  Category of waste-
+            (i) Incineration
+            (ii) Landfilling
+            (iii) Other disposal operations
+            = Total:                        <span>{{storders.n80}}</span></p>
+
+        <p>  If the entity has operations/offices in/around ecologically sensitive areas (such as national
+            parks, wildlife sanctuaries, biosphere reserves, wetlands, biodiversity hotspots, forests,
+            coastal regulation zones etc.) where environmental approvals / clearances are required:                           <span>{{storders.n81}}</span></p>
+
+        <p>  Details of environmental impact assessments of projects undertaken by the entity                                 <span>{{storders.n82}}</span></p>
+
+     
+                                
+                          
+                        </div>
+                    </div>
+                    <div class="container">
+                        
+                            <h3>PRINCIPLE 7 Businesses, when engaging in influencing public and
+                                regulatory policy, should do so in a manner that is responsible and
+                                transparent</h3>
+                            <p>Number of affiliations with trade and industry chambers/ associations: <span>{{storders.n83}}</span></p>
+                     
+                            <p>Details of public policy positions advocated by the entity: <span>{{storders.n84}}</span></p>
+
+
+                    
+                     
+                    </div>
+
+                    <div class="container">
+                        
+                        <h3>PRINCIPLE 8: Businesses should promote inclusive growth and
+                            equitable development</h3>
+                        <p>Details of Social Impact Assessments (SIA) of projects undertaken : <span>{{storders.n85}}</span></p>
+                 
+                        <p>Provide information on project(s) for which ongoing Rehabilitation and Resettlement
+                            (R&R) is being undertaken:  <span>{{storders.n86}}</span></p>
+                            <p>Details of Social Impact Assessments (SIA) of projects undertaken : <span>{{storders.n85}}</span></p>
+                 
+                            <p>Percentage of input material (inputs to total inputs by value) sourced from suppliers: <span>{{storders.n86}}</span></p>
+                 
+                                <p>Provide information on project(s) for which ongoing Rehabilitation and Resettlement
+                                    (R&R) is being undertaken:  <span>{{storders.n87}}</span></p>
+
+                
+                 
+                </div>
+
+                <div class="container">
+                        
+                    <h3>PRINCIPLE 9 Businesses should engage with and provide value to
+                        their consumers in a responsible manner</h3>
+                    <p>Turnover of products and/ services as a percentage of turnover from all products/service      : <span>{{storders.n88}}</span></p>
+             
+                    <p>Number of consumer complaints : <span>{{storders.n89}}</span></p>
+             
+                        <p>Does the entity have a framework/ policy on cyber security and risks related to data
+                            privacy?     <span>{{storders.n90}}</span></p>
+             
+                          
+
+            
+             
+            </div>
+
+
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+
+
+
+
+            {% endfor %}
+</body></html>

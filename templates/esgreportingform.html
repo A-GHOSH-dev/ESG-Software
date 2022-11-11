@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ESG Reporting</title>
+  </head>
+  <body>
+    <main class="container m-5">
+    <h1>SECTION A: GENERAL DISCLOSURES</h1>
+    <br> <br> <br>
+    <h3>I. Details of the listed entity</h3>
+    <br> <br> <br>
+    <form action="/esgreportingform" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="n1" class="form-label">1. Corporate Identity Number (CIN) of the Listed Entity  </label>
+          <input type="text" class="form-control" id="n1" name="n1">
+        </div>
+        <div class="mb-3">
+            <label for="n1" class="form-label">2. Name of the Listed Entity</label>
+            <input type="text" class="form-control" id="n2" name="n2">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">3. Year of incorporation</label>
+            <input type="text" class="form-control" id="n3" name="n3">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">4. Registered office address </label>
+            <input type="text" class="form-control" id="n4" name="n4">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">5. E-mail </label>
+            <input type="text" class="form-control" id="n5" name="n5">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">6. Telephone</label>
+            <input type="text" class="form-control" id="n6" name="n6">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">7. Website</label>
+            <input type="text" class="form-control" id="n7" name="n7">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">8. Financial year for which reporting is being done</label>
+            <input type="text" class="form-control" id="n8" name="n8">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">9. Name of the Stock Exchange(s) where shares are listed</label>
+            <input type="text" class="form-control" id="n9" name="n9">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">10. Paid-up Capital</label>
+            <input type="text" class="form-control" id="n10" name="n10">
+          </div>
+          <br> <br> <br>
+          <h3>II. Products/services</h3>
+          <br> <br> <br>
+          <div class="mb-3">
+            <label for="n1" class="form-label">11. Details of business activities (accounting for 90% of the turnover):
+            </label>
+            <input type="text" class="form-control" id="n11" name="n11">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">12. Products/Services sold by the entity (accounting for 90% of the entity’s Turnover):
+            </label>
+            <input type="text" class="form-control" id="n12" name="n12">
+          </div>
+          <br> <br> <br>
+          <h3>III. Operations</h3>
+          <br> <br> <br>
+          <div class="mb-3">
+            <label for="n1" class="form-label">13. Number of locations where plants and/or operations/offices of the entity are situated:
+            </label>
+            <input type="text" class="form-control" id="n13" name="n13">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">14. Markets served by the entity:
+            </label>
+            <input type="text" class="form-control" id="n14" name="n14">
+          </div>
+          <br> <br> <br>
+          <h3>IV. Employees</h3>
+          <br> <br> <br>
+          <div class="mb-3">
+            <label for="n1" class="form-label">15. Employees and workers (including differently abled):
+            </label>
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Male
+            </label>
+            <input type="text" class="form-control" id="n15" name="n15">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Female
+            </label>
+            <input type="text" class="form-control" id="n16" name="n16">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Others
+            </label>
+            <input type="text" class="form-control" id="n17" name="n17">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Differently abled
+            </label>
+            <input type="text" class="form-control" id="n18" name="n18">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">16. TurnOver rates:            </label>
+            <input type="text" class="form-control" id="n19" name="n19">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">17. Holding, Subsidiary and Associate Companies (including joint ventures):          </label>
+            <input type="text" class="form-control" id="n20" name="n20">
+          </div>
+          <br> <br> <br>
+          <h3>V. CSR Details </h3>
+          <br> <br> <br>
+          <div class="mb-3">
+            <label for="n1" class="form-label">18. CSR details:          </label>
+            <input type="text" class="form-control" id="n21" name="n21">
+          </div>
+
+          <br> <br> <br>
+          <h3>VI. Transparency and Disclosures Compliances </h3>
+          <br> <br> <br>
+          <div class="mb-3">
+            <label for="n1" class="form-label">19. Complaints/Grievances on any of the principles          </label>
+            <input type="text" class="form-control" id="n22" name="n22">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">20. Overview of the entity’s material responsible business conduct issues </label>
+            <input type="text" class="form-control" id="n23" name="n23">
+          </div>
+          <br> <br> <br>
+          <h1>SECTION B: MANAGEMENT AND PROCESS DISCLOSURES</h1>
+          <br> <br> <br>
+          <div class="mb-3">
+            <label for="n1" class="form-label">21. Policy and management processes
+            </label>
+            <input type="text" class="form-control" id="n24" name="n24">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">22. Governance, leadership and oversight
+            </label>
+            <input type="text" class="form-control" id="n25" name="n25">
+          </div>
+          <br> <br> <br>
+          <h1>SECTION C: PRINCIPLE WISE PERFORMANCE DISCLOSURE</h1>
+          <br> <br> <br>
+          <h3>PRINCIPLE 1 - Businesses should conduct and govern themselves with integrity, and in a manner that is Ethical, Transparent and Accountable.</h3>
+          <br> <br> <br>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Percentage coverage by training and awareness programmes on any of the Principles
+                during the financial year:
+                          </label>
+            <input type="text" class="form-control" id="n26" name="n26">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Amount Fines/Penalties: </label>
+            <input type="text" class="form-control" id="n27" name="n27">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Award:
+
+                          </label>
+            <input type="text" class="form-control" id="n28" name="n28">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Does the entity have an anti-corruption or anti-bribery policy?
+            </label>
+            <input type="text" class="form-control" id="n29" name="n29">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Provide details of any corrective action taken:
+
+                          </label>
+            <input type="text" class="form-control" id="n30" name="n30">
+          </div>
+
+          <br> <br> <br>
+          <h3>PRINCIPLE 2 Businesses should provide goods and services in a manner that is sustainable and safe
+            </h3>
+            <br> <br> <br>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Percentage of R&D investments in specific technologies
+                to improve the environmental and social impacts of product and processes to total R&D.
+                
+                          </label>
+            <input type="text" class="form-control" id="n31" name="n31">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Percentage of capital expenditure (capex) investments in specific technologies
+                to improve the environmental and social impacts of product and processes.
+                 </label>
+            <input type="text" class="form-control" id="n32" name="n32">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Sustainable sourcing percentage input?
+
+
+                          </label>
+            <input type="text" class="form-control" id="n33" name="n33">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Does the entity have an anti-corruption or anti-bribery policy?
+            </label>
+            <input type="text" class="form-control" id="n34" name="n34">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Describe the processes in place to safely reclaim your products for reusing, recycling and
+                disposing at the end of life, for Plastics (including packaging)
+                
+
+                          </label>
+            <input type="text" class="form-control" id="n35" name="n35">
+          </div>
+
+          <div class="mb-3">
+            <label for="n1" class="form-label">Describe the processes in place to safely reclaim your products for reusing, recycling and
+                disposing at the end of life, for E-waste
+                
+                
+
+                          </label>
+            <input type="text" class="form-control" id="n36" name="n36">
+          </div>
+
+          <div class="mb-3">
+            <label for="n1" class="form-label">Describe the processes in place to safely reclaim your products for reusing, recycling and
+                disposing at the end of life, for Hazardous waste
+                
+                
+
+                          </label>
+            <input type="text" class="form-control" id="n37" name="n37">
+          </div>
+
+          <div class="mb-3">
+            <label for="n1" class="form-label">Whether Extended Producer Responsibility (EPR) is applicable to the entity’s activities?
+                          </label>
+            <input type="text" class="form-control" id="n38" name="n38">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">If there are any significant social or environmental concerns and/or risks arising from
+                production or disposal of your products / services, as identified in the Life Cycle
+                Perspective / Assessments (LCA) or through any other means, briefly describe the same
+                along-with action taken to mitigate the same.
+                
+                          </label>
+            <input type="text" class="form-control" id="n39" name="n39">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Percentage of recycled or reused input material to total material (by value) used in
+                production (for manufacturing industry) or providing services (for service industry).
+                
+                          </label>
+            <input type="text" class="form-control" id="n40" name="n40">
+          </div>
+        
+          <br> <br> <br>
+          <h3>PRINCIPLE 3 Businesses should respect and promote the well-being
+            of all employees, including those in their value chains
+            </h3>
+            <br> <br> <br>
+            <div class="mb-3">
+                <label for="n1" class="form-label">Details of measures for the well-being of employees:
+                </label>
+                <input type="text" class="form-control" id="n41" name="n41">
+              </div>
+              <div class="mb-3">
+                <label for="n1" class="form-label">Does the entity have an equal opportunity policy as per the Rights of Persons with
+                    Disabilities Act, 2016? If so, provide a web-link to the policy.                    
+                </label>
+                <input type="text" class="form-control" id="n42" name="n42">
+              </div>
+
+              <div class="mb-3">
+                <label for="n1" class="form-label">Health and safety management system:
+                </label>
+                <input type="text" class="form-control" id="n43" name="n43">
+              </div>
+              <div class="mb-3">
+                <label for="n1" class="form-label">Details of safety related incidents:                
+                </label>
+                <input type="text" class="form-control" id="n44" name="n44">
+              </div>
+
+              <br> <br> <br>
+
+              <h3>PRINCIPLE 4: Businesses should respect the interests of and be
+                responsive to all its stakeholders
+                </h3>
+                <br> <br> <br>
+              <div class="mb-3">
+                <label for="n1" class="form-label">Describe the processes for identifying key stakeholder groups of the entity
+                </label>
+                <input type="text" class="form-control" id="n45" name="n45">
+              </div>
+              <div class="mb-3">
+                <label for="n1" class="form-label">List stakeholder groups identified as key for your entity and the frequency of
+                    engagement with each stakeholder group.                                      
+                </label>
+                <input type="text" class="form-control" id="n46" name="n46">
+              </div>
+              <div class="mb-3">
+                <label for="n1" class="form-label">Provide the processes for consultation between stakeholders and the Board on
+                    economic, environmental, and social topics                                                         
+                </label>
+                <input type="text" class="form-control" id="n47" name="n47">
+              </div>
+
+              <br> <br> <br>
+              <h3>PRINCIPLE 5 Businesses should respect and promote human rights
+                </h3>
+                <br> <br> <br>
+              <div class="mb-3">
+                <label for="n1" class="form-label">Number of Employees and workers who have been provided training on human rights issues and policy(ies) of the entity
+                </label>
+                <input type="text" class="form-control" id="n48" name="n48">
+              </div>
+              <div class="mb-3">
+                <label for="n1" class="form-label">Details of minimum wages paid to employees                                      
+                </label>
+                <input type="text" class="form-control" id="n49" name="n49">
+              </div>
+              <div class="mb-3">
+                <label for="n1" class="form-label">Mechanisms to prevent adverse consequences to the complainant in discrimination and
+                    harassment cases.                                                                            
+                </label>
+                <input type="text" class="form-control" id="n50" name="n50">
+              </div>
+    
+
+              <br> <br> <br>
+              
+              <h3>PRINCIPLE 6: Businesses should respect and make efforts to protect
+                and restore the environment
+                
+            </h3>
+            <br> <br> <br>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Provide details of the following disclosures related to energy:
+            </label>
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Details of total energy consumption (in Joules or multiples) and energy intensity:                                 
+            </label>
+            <input type="text" class="form-control" id="n51" name="n51">
+          </div>
+          <div class="mb-3">
+            <label for="n1" class="form-label">Total electricity consumption:                                                             
+            </label>
+            <input type="text" class="form-control" id="n52" name="n52">
+          </div>
+
+          <div class="mb-3">
+            <label for="n1" class="form-label">Total fuel consumption                                                            
+            </label>
+            <input type="text" class="form-control" id="n53" name="n53">
+          </div>
+
+
+          <div class="mb-3">
+            <label for="n1" class="form-label">Total energy consumption:                                                             
+            </label>
+            <input type="text" class="form-control" id="n54" name="n54">
+          </div>
+
+
+          <div class="mb-3">
+            <label for="n1" class="form-label">Energy intensity per rupee of turnover                                                             
+            </label>
+            <input type="text" class="form-control" id="n55" name="n55">
+          </div>
+
+
+            
+       
+      <div class="mb-3">
+        <label for="n1" class="form-label">Provide details of the following disclosures related to water:
+        </label>
+      </div>
+      <div class="mb-3">
+        <label for="n1" class="form-label">Water withdrawal by source
+            (i) Surface water
+            (ii) Groundwater
+            (iii) Third party water
+            (iv) Seawater / desalinated water
+            (v) Others
+            
+             = Total volume of water withdrawal:
+                                           
+        </label>
+        <input type="text" class="form-control" id="n56" name="n56">
+      </div>
+      <div class="mb-3">
+        <label for="n1" class="form-label">Total volume of water consumption:                                                             
+        </label>
+        <input type="text" class="form-control" id="n57" name="n57">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">Water intensity per rupee of turnover:                                                            
+        </label>
+        <input type="text" class="form-control" id="n58" name="n58">
+      </div>
+
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">Has the entity implemented a mechanism for Zero Liquid Discharge?                                                      
+        </label>
+        <input type="text" class="form-control" id="n59" name="n59">
+      </div>
+
+
+
+        
+      <div class="mb-3">
+        <label for="n1" class="form-label">Please provide details of air emissions (other than GHG emissions):
+        </label>
+      </div>
+      <div class="mb-3">
+        <label for="n1" class="form-label">NOx
+           
+            
+                                           
+        </label>
+        <input type="text" class="form-control" id="n60" name="n60">
+      </div>
+      <div class="mb-3">
+        <label for="n1" class="form-label"> SOx
+                                                                        
+        </label>
+        <input type="text" class="form-control" id="n61" name="n61">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label"> Particulate matter
+            (PM)
+                                                                       
+        </label>
+        <input type="text" class="form-control" id="n62" name="n62">
+      </div>
+
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">Persistent organic pollutants (POP)
+      
+        </label>
+        <input type="text" class="form-control" id="n63" name="n63">
+      </div>
+      <div class="mb-3">
+        <label for="n1" class="form-label">  Volatile organic compounds (VOC)
+         
+        </label>
+        <input type="text" class="form-control" id="n64" name="n64">
+      </div>
+      <div class="mb-3">
+        <label for="n1" class="form-label">
+            Hazardous air pollutants (HAP) 
+        </label>
+        <input type="text" class="form-control" id="n65" name="n65">
+      </div>
+
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">Provide details of greenhouse gas emissions (Scope 1 and Scope 2 emissions)
+        </label>
+      </div>
+      <div class="mb-3">
+        <label for="n1" class="form-label">Total Scope 1 emissions
+            (Break-up of the GHG into
+            CO2, CH4, N2O, HFCs, PFCs,
+            SF6, NF3, if available)
+                                         
+        </label>
+        <input type="text" class="form-control" id="n66" name="n66">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">Total Scope 2 emissions
+            (Break-up of the GHG into
+            CO2, CH4, N2O, HFCs, PFCs,
+            SF6, NF3, if available)
+            
+                                         
+        </label>
+        <input type="text" class="form-control" id="n67" name="n67">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">Total Scope 3 emissions
+            (Break-up of the GHG into
+            CO2, CH4, N2O, HFCs, PFCs,
+            SF6, NF3, if available)                           
+        </label>
+        <input type="text" class="form-control" id="n68" name="n68">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">Does the entity have any project related to reducing Green House Gas emission?                              
+        </label>
+        <input type="text" class="form-control" id="n69" name="n69">
+      </div>
+
+
+
+      
+      <div class="mb-3">
+        <label for="n1" class="form-label">Provide details related to waste management:
+        </label>
+      </div>
+      <div class="mb-3">
+        <label for="n1" class="form-label">Plastic waste (A)
+                                         
+        </label>
+        <input type="text" class="form-control" id="n70" name="n70">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">E-waste (B)                               
+        </label>
+        <input type="text" class="form-control" id="n71" name="n71">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">Bio-medical waste (C)              
+        </label>
+        <input type="text" class="form-control" id="n72" name="n72">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label"> Construction and demolition waste (D)
+        </label>
+        <input type="text" class="form-control" id="n73" name="n73">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">    Battery waste (E)
+        </label>
+        <input type="text" class="form-control" id="n74" name="n74">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">   Radioactive waste (F)  
+        </label>
+        <input type="text" class="form-control" id="n75" name="n75">
+      </div>
+
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">   Other Hazardous waste. Please
+            specify, if any. (G)
+              
+        </label>
+        <input type="text" class="form-control" id="n76" name="n76">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">   Other Non-hazardous waste
+            generated (H).
+             
+        </label>
+        <input type="text" class="form-control" id="n77" name="n77">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">   Total:
+             
+        </label>
+        <input type="text" class="form-control" id="n78" name="n78">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label">  Category of waste-
+            (i) Recycled
+            (ii) Re-used
+            (iii) Other recovery operations
+            = Total:
+             
+        </label>
+        <input type="text" class="form-control" id="n79" name="n79">
+      </div>
+   
+    
+      <div class="mb-3">
+        <label for="n1" class="form-label"> Category of waste-
+            (i) Incineration
+            (ii) Landfilling
+            (iii) Other disposal operations
+            = Total:
+             
+        </label>
+        <input type="text" class="form-control" id="n80" name="n80">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label"> If the entity has operations/offices in/around ecologically sensitive areas (such as national
+            parks, wildlife sanctuaries, biosphere reserves, wetlands, biodiversity hotspots, forests,
+            coastal regulation zones etc.) where environmental approvals / clearances are required:            
+        </label>
+        <input type="text" class="form-control" id="n81" name="n81">
+      </div>
+
+      <div class="mb-3">
+        <label for="n1" class="form-label"> Details of environmental impact assessments of projects undertaken by the entity         
+        </label>
+        <input type="text" class="form-control" id="n82" name="n82">
+      </div>
+   
+      <br> <br> <br>
+      <h3>PRINCIPLE 7 Businesses, when engaging in influencing public and
+        regulatory policy, should do so in a manner that is responsible and
+        transparent
+        </h3>
+        <br> <br> <br>
+        <div class="mb-3">
+            <label for="n1" class="form-label"> Number of affiliations with trade and industry chambers/ associations.        
+            </label>
+            <input type="text" class="form-control" id="n83" name="n83">
+          </div>
+          
+        <div class="mb-3">
+            <label for="n1" class="form-label"> Details of public policy positions advocated by the entity:      
+            </label>
+            <input type="text" class="form-control" id="n84" name="n84">
+          </div>
+
+          <br> <br> <br>
+          <h3>PRINCIPLE 8 Businesses should promote inclusive growth and
+            equitable development
+            <br> <br> <br>
+            </h3>
+    
+            <div class="mb-3">
+                <label for="n1" class="form-label"> Details of Social Impact Assessments (SIA) of projects undertaken       
+                </label>
+                <input type="text" class="form-control" id="n85" name="n85">
+              </div>
+              
+            <div class="mb-3">
+                <label for="n1" class="form-label"> Provide information on project(s) for which ongoing Rehabilitation and Resettlement
+                    (R&R) is being undertaken
+                          
+                </label>
+                <input type="text" class="form-control" id="n86" name="n86">
+              </div>
+          
+        <div class="mb-3">
+            <label for="n1" class="form-label"> Percentage of input material (inputs to total inputs by value) sourced from suppliers:
+       
+            </label>
+            <input type="text" class="form-control" id="n87" name="n87">
+          </div>
+       
+
+          <br> <br> <br>
+
+          <h3>PRINCIPLE 9 Businesses should engage with and provide value to
+            their consumers in a responsible manner
+            
+            <br> <br> <br> 
+            </h3>
+    
+            <div class="mb-3">
+                <label for="n1" class="form-label"> Turnover of products and/ services as a percentage of turnover from all products/service      
+                </label>
+                <input type="text" class="form-control" id="n88" name="n88">
+              </div>
+              
+            <div class="mb-3">
+                <label for="n1" class="form-label"> Number of consumer complaints                          
+                </label>
+                <input type="text" class="form-control" id="n89" name="n89">
+              </div>
+          
+        <div class="mb-3">
+            <label for="n1" class="form-label"> Does the entity have a framework/ policy on cyber security and risks related to data
+                privacy?               
+            </label>
+            <input type="text" class="form-control" id="n90" name="n90">
+          </div>
+       
+
+
+   
+    
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+
+
+
+
+

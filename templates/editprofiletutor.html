@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    {% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/tutsignupstyle.css' %}">
+  
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/codyhouse-framework/main/assets/css/style.min.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Create Profile</title>
+</head>
+
+<body style="background-color: #FFEDE1;">
+    <div class="signup-form-container">
+        <form class="sign-up-form" action="/editprofiletutor" method="POST">
+            {% csrf_token %}
+            <div class="text-component text-center margin-bottom-sm">
+                <p>{% for msg in messages %}
+                    {{msg}}
+                    {% endfor %}</p>
+                <h1>Tutor Create Profile</h1>
+                <p></p>
+            </div>
+
+
+
+
+
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                    <div class="col-6@md">
+
+                        <input placeholder="First name" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="text" name="inputfirstname" id="inputfirstname">
+                    </div>
+
+                    <div class="col-6@md">
+
+                        <input placeholder="Last name" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="text" name="inputlastname" id="inputlastname">
+                    </div>
+                </div>
+            </div>
+
+            <div class="margin-bottom-sm">
+
+                <input placeholder="email" style="background:#FFEDE1;border: 2px solid #341D30"
+                    class="form-control width-100%" type="email" name="inputemail" id="inputemail">
+            </div>
+
+           
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                  
+
+                        <input placeholder="phone no" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="number" name="inputphone" id="inputphone">
+                
+
+               
+                </div>
+            </div>
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                  
+
+                        <input placeholder="Tutor/Student?" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="text" name="inputtype" id="inputtype">
+                
+
+               
+                </div>
+            </div>
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                  
+
+                        <input placeholder="Address of tutoring" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="text" name="inputaddress" id="inputaddress">
+                
+
+               
+                </div>
+            </div>
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                  
+
+                        <input placeholder="Picture Link" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="url" name="inputpic" id="inputpic">
+                
+
+               
+                </div>
+            </div>
+
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                  
+
+                        <input placeholder="Courses tutoring" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="text" name="inputcourses" id="inputcourses">
+                
+
+               
+                </div>
+            </div>
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                  
+
+                        <input placeholder="Experience" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="text" name="inputexperience" id="inputinputexperience">
+                
+
+               
+                </div>
+            </div>
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                  
+
+                        <input placeholder="Age" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="number" name="inputage" id="inputage">
+                
+
+               
+                </div>
+            </div>
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                  
+
+                        <input placeholder="Organization Link (If you ae a part of any organization)" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="url" name="inputorg" id="inputorg">
+                
+
+               
+                </div>
+            </div>
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                  
+
+                        <input placeholder="Timings" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="text" name="inputtime" id="inputtime">
+                
+
+               
+                </div>
+            </div>
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                  
+
+                        <input placeholder="Seats" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="number" name="inputseat" id="inputseat">
+                
+
+               
+                </div>
+            </div>
+            <div class="margin-bottom-sm">
+                <div class="grid gap-xs">
+                  
+
+                        <input placeholder="Mode (Online/Offline)" style="background:#FFEDE1;border: 2px solid #341D30"
+                            class="form-control width-100%" type="text" name="inputmode" id="inputmode">
+                
+
+               
+                </div>
+            </div>
+
+
+            <div class="button-color margin-bottom-sm">
+                <button style="background-color: #341D30;" class="btn btn--primary btn--md width-100%">Sign Up</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/codyhouse-framework/main/assets/js/util.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+
+
+
+
+</body>
+
+</html>

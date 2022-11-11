@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="calendar.js" defer></script>
+    <link rel="stylesheet" href="{% static 'css/studentdashboardpagestyle.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  
+    
+    <title>Student Dashboard</title>
+  </head>
+
+  <body>
+    <p>{% for msg in messages %}
+      {{msg}}
+      {% endfor %}</p>
+    <main>
+      <nav>
+        <h1>TUTFINDER</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">DashBoard</a></li>
+          <li><a href="contact.html">Connect</a></li>
+          <img class="avatar" src="https://picsum.photos/200/200" alt="" />
+        </ul>
+      </nav>
+    
+
+   
+          <div class="section">
+            <div class="scard"><a href="/registernewcourse">
+              <img src="{% static 'images/assets/abc.JPG' %}" alt="" />
+              <center><h3>Add a Course</h3></center>
+            </div></a>
+            <div class="scard"></div>
+            <div class="scard"></div>
+            <div class="scard"></div>
+            <div class="scard"></div>
+            <div class="scard"></div>
+   
+        </div>
+     
+  </body>
+
+</html>
