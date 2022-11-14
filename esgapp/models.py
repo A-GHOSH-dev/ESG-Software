@@ -118,6 +118,17 @@ class Finalapproverprofile(models.Model):
         db_table = 'Finalapproverprofile'
 
 
+class Finalupdate(models.Model):
+    comment = models.CharField(primary_key=True, max_length=200, db_collation='SQL_Latin1_General_CP1_CI_AS')
+    statuss = models.CharField(max_length=200, db_collation='SQL_Latin1_General_CP1_CI_AS')
+    yearfor = models.CharField(max_length=200, db_collation='SQL_Latin1_General_CP1_CI_AS')
+    companyid = models.CharField(max_length=200, db_collation='SQL_Latin1_General_CP1_CI_AS')
+
+    class Meta:
+        managed = False
+        db_table = 'Finalupdate'
+
+
 class Finaluserprofile(models.Model):
     inputfirstnamestu = models.CharField(max_length=50, db_collation='SQL_Latin1_General_CP1_CI_AS')
     inputlastnamestu = models.CharField(max_length=50, db_collation='SQL_Latin1_General_CP1_CI_AS')

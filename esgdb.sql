@@ -1,6 +1,14 @@
 CREATE DATABASE ESGManagementSoftware
 use ESGManagementSoftware
 
+create table Finalupdate(
+comment varchar(200) not null primary key,
+statuss varchar(200) not null, --StudentName
+yearfor varchar(200) not null,
+companyid varchar(200) not null,
+
+);
+
 create table Finalapproverprofile(
 inputfirstnamet varchar(50) not null, --Name
 inputlastnamet varchar(50) not null, --Name
@@ -21,16 +29,7 @@ inputphonestu numeric(15) not null, --Phone
 
 );
 
-create table Finaluserregister(
-registernewid numeric(20) not null,
-registernewcontact numeric(15) not null, --StudentName
-registernewemail varchar(100) not null primary key, --StudentEmail address
-studentnotetotutor varchar(200) not null, --address
-tutoridnew varchar(500) not null,
-tutornewemail varchar(300) not null,
-coursesregistered varchar(200) not null,
 
-);
 
 
 create table Esgreporting(
@@ -127,12 +126,10 @@ n90 varchar(200) not null,
 
 );
 
-
-
-
-
+DROP TABLE Finalupdate;
 DROP TABLE Finalapproverprofile;
-DROP TABLE Finalstudentregister;
 DROP TABLE Finaluserprofile;
+DROP TABLE Esgreporting;
+
 
 

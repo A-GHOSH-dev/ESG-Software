@@ -109,7 +109,7 @@
 
       <th>Check</th>
 
-      <th>Update</th>
+     
     </tr>
   </thead>
   <tbody>
@@ -127,7 +127,7 @@
               class="rounded-circle"
               />
           <div class="ms-3">
-            <span class="badge alert-info">{{sa.n2}}</span>
+            <span class="badge alert-info">{{sa.n2}} | {{sa.n1}}</span>
           </div>
         </div>
       </td>
@@ -139,20 +139,25 @@
         <a href="/reportpdf/{{storders.idstudent}}/{{sa.n8}}"> <span class="badge alert-primary">Report</span></a>
         {% endfor %}
       </td>
+
+     
+
+    
+        
       <td>
         <span class="badge alert-success">Approved</span>
       </td>
+  
+     
+
+
      
       <td>
      
-        <a href="/check/{{sa.n8}}"> <span class="badge alert-warning">Check</span></a>
+        <a href="/checkpage/{{sa.n1}}/{{sa.n8}}"> <span class="badge alert-warning">Check</span></a>
       
       </td>
-      {% for sss in finalupdateorder %}
-      <td>
-        <span class="badge alert-light">{{sss.update}}</span>
-      </td>
-      {% endfor %}
+     
 
     </tr>
     {% endfor %}

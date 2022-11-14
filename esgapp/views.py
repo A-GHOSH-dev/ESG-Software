@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse, redirect
-from esgapp.models import Finalapproverprofile, Finaluserprofile, Finaluserregister, Esgreporting
+from esgapp.models import Finalapproverprofile, Finaluserprofile, Esgreporting, Finalupdate
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
@@ -376,47 +376,26 @@ def reportpdf(request, ik, hk):
 
 
 
-def userdashboardpage(request, ik): #take from registeration
-    #return HttpResponse("This is my home page")
-    #return render(request, 'studentdashboardpage.html')
-    #finalprofiletutorder = Finaltutorprofile.objects.all()
-    #finalprofilestudorder = Finalstudentprofile.objects.filter(idstudent=ik)
-    finalprofileuserorder = Finaluserprofile.objects.filter(idstudent=ik)
+
+def checkpage(request, ik, hk):
     finalreportorder = Esgreporting.objects.filter(n1=ik)
-    print(finalprofileuserorder, finalreportorder)
-    return render(request, 'userdashboardpage.html', {"finalprofileuserorder":finalprofileuserorder, "finalreportorder":finalreportorder})
-
-
-def approverdashboard(request, pk):
-    #return HttpResponse("This is my home page")
-    #return render(request, 'tutordashboard.html')
-    finalprofileuserorder = Finaluserprofile.objects.filter()
-    finalprofileapproverorder = Finalapproverprofile.objects.filter(idtutor=pk)
-    finalreportorder = Esgreporting.objects.filter()
-    print(finalprofileapproverorder, finalreportorder, finalprofileuserorder)
-    return render(request, 'approverdashboard.html', {"finalprofileapproverorder":finalprofileapproverorder, "finalreportorder":finalreportorder, "finalprofileuserorder":finalprofileuserorder})
-
-
-
-def checkpage(request):
+    finalreportorder = Esgreporting.objects.filter(n8=hk)
     #return HttpResponse("This is my home page")
     #return render(request, 'registernewcourse.html')
-    finalregisteruserorder = Finaluserregister.objects.all()
+    finalupdateorder = Finalupdate.objects.all()
     if request.method=="POST":
-        registernewid=request.POST['registernewid']
-        registernewcontact=request.POST['registernewcontact']
-        registernewemail=request.POST['registernewemail']
-        studentnotetotutor=request.POST['studentnotetotutor']
-        tutoridnew=request.POST['tutoridnew']
-        tutornewemail=request.POST['tutornewemail']
-        coursesregistered=request.POST['coursesregistered']
-        
-        finaluserregisterdata = Finaluserregister(registernewid=registernewid, registernewcontact=registernewcontact, registernewemail=registernewemail, studentnotetotutor=studentnotetotutor, tutoridnew=tutoridnew, tutornewemail=tutornewemail, coursesregistered=coursesregistered)  
+        comment=request.POST['comment']
+        statuss=request.POST['statuss']
+        yearfor=request.POST['yearfor']
+        companyid=request.POST['companyid']
 
-        finaluserregisterdata.save()
-        messages.success(request, "Course Registered Successfully") 
         
-        tosign = request.POST.get('tutornewemail')
+        finalupdatedata = Finalupdate(comment=comment, statuss=statuss, yearfor=yearfor, companyid=companyid)  
+
+        finalupdatedata.save()
+        messages.success(request, "Status Updated") 
+        
+        '''tosign = request.POST.get('tutornewemail')
         conver = request.POST.get('registernewid')
         conver1 = request.POST.get('registernewcontact')
         conver2 = request.POST.get('registernewemail')
@@ -430,6 +409,39 @@ def checkpage(request):
             [tosign]
         )
         
+        '''
+        print(finalreportorder)
+        return render(request, 'userdashboardpage.html', {"finalreportorder":finalreportorder})
+        
         
                      
-    return render(request,"checkpage.html",{"Fuserregisterorders":finalregisteruserorder})
+    return render(request,"checkpage.html",{"Fupdateorders":finalupdateorder})
+
+
+
+
+def userdashboardpage(request, ik): #take from registeration
+    #return HttpResponse("This is my home page")
+    #return render(request, 'studentdashboardpage.html')
+    #finalprofiletutorder = Finaltutorprofile.objects.all()
+    #finalprofilestudorder = Finalstudentprofile.objects.filter(idstudent=ik)
+    finalprofileuserorder = Finaluserprofile.objects.filter(idstudent=ik)
+    finalreportorder = Esgreporting.objects.filter(n1=ik)
+    finalupdateorder = Finalupdate.objects.filter(companyid=ik)
+    print(finalprofileuserorder, finalreportorder, finalupdateorder)
+    return render(request, 'userdashboardpage.html', {"finalprofileuserorder":finalprofileuserorder, "finalreportorder":finalreportorder, "finalupdateorder":finalupdateorder})
+
+
+
+def approverdashboard(request, pk):
+    #return HttpResponse("This is my home page")
+    #return render(request, 'tutordashboard.html')
+    finalprofileuserorder = Finaluserprofile.objects.filter()
+    finalprofileapproverorder = Finalapproverprofile.objects.filter(idtutor=pk)
+    finalreportorder = Esgreporting.objects.filter()
+    finalupdateorder = Finalupdate.objects.filter()
+    
+    print(finalprofileapproverorder, finalreportorder, finalprofileuserorder, finalupdateorder)
+    return render(request, 'approverdashboard.html', {"finalprofileapproverorder":finalprofileapproverorder, "finalreportorder":finalreportorder, "finalprofileuserorder":finalprofileuserorder, "finalupdateorder":finalupdateorder})
+
+

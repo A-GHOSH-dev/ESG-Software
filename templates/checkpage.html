@@ -13,26 +13,42 @@
         <p>{% for msg in messages %}
             {{msg}}
             {% endfor %}</p>
-        <form class="login-form" action="/registernewcourse" method="POST">
+        <form class="login-form" action="/checkpage/<str:ik>/<str:hk>" method="POST">
             {% csrf_token %}
 
 
             <div class="margin-bottom-sm">
                
-                <input  style=" color: #341D30; background: #FFEDE1;  " class="form-control width-100%" type="number" name="registernewid"
-                    id="registernewid" placeholder="Student Profile ID">
+                <input  style=" color: #341D30; background: #FFEDE1;  " class="form-control width-100%" type="text" name="comment"
+                    id="comment" placeholder="Comments">
             </div>
 
 
             <div class="margin-bottom-sm">
                
-                <input  style=" color: #341D30; background: #FFEDE1;  " class="form-control width-100%" type="number" name="registernewcontact"
-                    id="registernewcontact" placeholder="contact number">
+                <input  style=" color: #341D30; background: #FFEDE1;  " class="form-control width-100%" type="text" name="statuss"
+                    id="statuss" placeholder="Status">
+            </div>
+
+            
+
+            <div class="margin-bottom-sm">
+               
+                <input  style=" color: #341D30; background: #FFEDE1;  " class="form-control width-100%" type="text" name="yearfor"
+                    id="yearfor" placeholder="Year">
+            </div>
+
+
+            
+            <div class="margin-bottom-sm">
+               
+                <input  style=" color: #341D30; background: #FFEDE1;  " class="form-control width-100%" type="text" name="companyid"
+                    id="companyid" placeholder="Company ID">
             </div>
            
 
             <div class="margin-bottom-sm button-color">
-                <button class="btn btn--primary btn--md width-100%" style="background-color: #341D30;">Register New Course</button>
+                <button class="btn btn--primary btn--md width-100%" style="background-color: #341D30;">Submit Status</button>
             </div> 
             
 
